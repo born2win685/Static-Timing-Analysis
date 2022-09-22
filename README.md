@@ -3,11 +3,11 @@ VSD Udemy Course Static Timing Analysis
 
 ## Installing OpenTimer
 To install the opentimer, 
-  - Install CMAKE as explained in the following website https://linuxhint.com/install-cmake-on-ubuntu/.
+  - Make sure cmake is installed
   - Type the following commands in the terminal
   
+I am cloning the OpenTimer repo in `Desktop/sem_5/asic` directory.It can be done anywhere
 ```
-cd Desktop
 git clone https://github.com/OpenTimer/OpenTimer.git
 cd OpenTimer
 mkdir build
@@ -44,7 +44,9 @@ The commands available in `OpenTimer can be viewed by typing the command `help` 
 </p><br>
 
 ## Specifying Constraints in OpenTimer
-Consider a random example of timing constaint file (which is usually named as `.timing`) for the design shown in below figure.
+
+Consider the following example of timing constaint file for the design shown in below figure.
+
 <p align="center">
   <img src="/images/sta5.png">
 </p><br>
@@ -59,13 +61,14 @@ load out 40
 rat out 160 160 180 180
 ```
 
-Here, `clock clk 1000 50` signifies that `clk` is the primary input of the desin and it is a clock input. Here `clock` is a keyword. Always in openTimer, we assume that Clock starts fromlow and then goes high. Here, clk has a period of 1000ps/1ns and a 50% duty cycle.
+From `clock clk 1000 50` we can tell that `clk` is the primary input of the design and it is a clock input. *clock* is a keyword. 
+We also assume in OpenTimer that clock goes from low to high.Here, clk has a period of 1000ps/1ns and a 50% duty cycle.
 
 <p align="center">
   <img src="/images/sta6.png">
 </p><br>
 
-Consider `at clk 0 500 0 500`. This signifies the arrival time of the clock. 
+Consider `at clk 0 500 0 500`. This signifies arrival time(at) of the clock.
 <p align="center">
   <img src="/images/sta7.png">
 </p><br>
