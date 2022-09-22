@@ -73,3 +73,20 @@ Consider `at clk 0 500 0 500`. This signifies arrival time(at) of the clock.
   <img src="/images/sta7.png">
 </p><br>
 
+
+# Contributors 
+
+- **B Sathiya Naraayanan** 
+- **Kunal Ghosh** 
+
+
+
+# Acknowledgments
+
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+
+# Contact Information
+
+- B Sathiya Naraayanan, IMT2020534, International Institute of Information Technology, Bangalore  ,Sathiya.Naraayanan@iiitb.ac.in
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
